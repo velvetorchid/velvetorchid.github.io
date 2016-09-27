@@ -1,0 +1,17 @@
+<script src="../lib/tracery.js"></script>
+<script src="../lib/mousetrap.min.js"></script>
+<script src="../lib/jquery-1.11.1.min.js"></script>
+<h1>Text will go here</h1>
+<button onclick="generate()">Generate</button>
+<script>
+var grammarObj = {
+	"sentence": ["<p>You will need the following for this spell</p><p>You will need the following for this spell</p><p>You will need the following for this spell</p>"],
+	
+
+}
+var grammar = tracery.createGrammar(grammarObj)
+function generate(){
+	var t = grammar.flatten("#sentence#");
+	$('h1').html(t);
+}
+</script>
