@@ -5,9 +5,26 @@
 <button onclick="generate()">Generate</button>
 <script>
 var grammarObj = {
-	"sentence": ["<p>#spellName##spellNoun#</p><p>#ingerdientOne#</p><p>#ingredientTwo#</p><p>#ingerdientThree#</p>"],
-	"spellName": ["Aphrodite's", "Midnight", "Dark", "Adoration", "Mystic", "Flame of", "Gift of", "Hecate's"]
-	"spellNoun": ["Brew", "Potion", "Incantation", "Chant", "Spell", "Bath", "Charm", "Potpurri", "Spell", "Spell", "Spell", "Spell", "Spell", "Spell", "Spell", "Spell", "Spell", "Symbol", "Oil"]
+	"sentence": ["<p>#spellName##spellNoun#</p><p>#ingerdientOne#</p><p>#ingredientTwo#</p><p>#ingerdientThree#</p><p>#verb# ingredients in #adjective# #magicalContainer#. #magicalVerb# your #magicalDeity#. As the #spellNoun# #magicalState#, wait for it to settle before #magicalUsage#"],
+	"spellName": ["Aphrodite's", "Midnight", "Dark", "Adoration", "Mystic", "Hecate's", "Passion", "Full Moon", "Erotic Healing" "Nefarious Fantasy", "Elemental Manipulation", "Evil Ward"]
+	"spellNoun": ["Brew", "Potion", "Bath", "Charm", "Potpurri", "Oil", "Philter", "Melange", "Draught", "Tonic"]
+	"ingredientOne": ["#darkIngredient#", "#bioIngredient#", "#catalyst#",]
+	"darkIngredient":
+	"bioIngredient":
+	"ingredientTwo": ["#bioIngredient#", "#plantFlower#" , "#plantOther#"]
+	"plantFlower": 
+	"plantOther":
+	"ingredientThree": ["#magicalKnowledge#", "#plantFlower#", "#plantOther#", ]
+	"magicalKnowledge":
+	"verb":
+	"adjective"
+	"magicalContainer":
+	"magicalVerb":
+	"magicalDeity":
+	"magicalState":
+	"magicalUsage":
+
+
 
 }
 var grammar = tracery.createGrammar(grammarObj)
