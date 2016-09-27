@@ -5,8 +5,9 @@
 <button onclick="generate()">Generate</button>
 <script>
 var grammarObj = {
-	"sentence": ["<p>You will need the following for this spell</p><p>You will need the following for this spell</p><p>You will need the following for this spell</p>"],
-	
+	"sentence": ["<p>#spellName##spellNoun#</p><p>#ingerdientOne#</p><p>#ingredientTwo#</p><p>#ingerdientThree#</p>"],
+	"spellName": ["Aphrodite's", "Midnight", "Dark", "Adoration", "Mystic", "Flame of", "Gift of", "Hecate's"]
+	"spellNoun": ["Brew", "Potion", "Incantation", "Chant", "Spell", "Bath", "Charm", "Potpurri", "Spell", "Spell", "Spell", "Spell", "Spell", "Spell", "Spell", "Spell", "Spell", "Symbol", "Oil"]
 
 }
 var grammar = tracery.createGrammar(grammarObj)
