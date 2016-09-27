@@ -5,11 +5,11 @@
 <button onclick="generate()">Generate</button>
 <script>
 var grammarObj = {
-	"sentence": ["<p>#spellName##spellNoun#</p><p>#ingerdientOne#</p><p>#ingredientTwo#</p><p>#ingerdientThree#</p><p>#verb# ingredients in #adjective# #magicalContainer#. #magicalVerb# your #magicalDeity#. As the #spellNoun# #magicalState#, wait for it to settle before #magicalUsage#"],
+	"sentence": ["<p>#spellName# #spellNoun#</p><p>#quantityOne# #ingerdientOne#</p><p>#quantityTwo# #ingredientTwo#</p><p>#quantityThree# #ingerdientThree#</p><p>#verb# ingredients in #adjective# #magicalContainer#. #magicalVerb# your #magicalDeity#. As the #spellNoun# #magicalState#, wait for it to settle before #magicalUsage#"],
 	"spellName": ["Aphrodite's", "Midnight", "Dark", "Adoration", "Mystic", "Hecate's", "Passion", "Full Moon", "Erotic Healing", "Nefarious Fantasy", "Elemental Manipulation", "Evil Ward"],
 	"spellNoun": ["Brew", "Potion", "Bath", "Charm", "Potpurri", "Oil", "Philter", "Melange", "Draught", "Tonic"],
 	"ingredientOne": ["#darkIngredient#", "#bioIngredient#", "#catalyst#",],
-	"darkIngredient": ["Eye of Rabid Dog"],
+	"darkIngredient": ["Eye of Rabid Dog", "Ectoplasm",],
 	"bioIngredient": ["Lock of Horse Hair"],
 	"ingredientTwo": ["#bioIngredient#", "#plantFlower#" , "#plantOther#"],
 	"plantFlower": ["Midnight Orchid Petal"],
@@ -22,7 +22,11 @@ var grammarObj = {
 	"magicalVerb": ["Invoke"],
 	"magicalDeity":["Ancestor Spirits"],
 	"magicalState": ["percolates"],
-	"magicalUsage": ["imbibing"]
+	"magicalUsage": ["imbibing"],
+	"quantityThree": ["#amount#"],
+	"quantityTwo": ["#amount#"],
+	"quantityOne": ["#amount#"],
+	"amount": ["One"]
 
 
 
