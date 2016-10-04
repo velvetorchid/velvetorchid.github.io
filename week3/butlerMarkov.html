@@ -2,7 +2,8 @@
 <script src="../lib/markov.js"></script>
 <script>
 var txt;
-var markov = new MarkovGeneratorWord(3,120)
+var markov = new MarkovGeneratorWord(3,120);
+
 $.get("butler.txt", function(text) {
      markov.feed(text);
 });
@@ -11,7 +12,7 @@ $.get("butler2.txt", function(text) {
 });
 function generate(){
 	var t = markov.generate()
-	$('body').text(t);
+	$('h1').text(t);
 }
 </script>
 <h1>Welcome to Incomprehensible Discourse Generator 3000</h1>
