@@ -1,0 +1,18 @@
+<script src="../lib/jquery-1.11.1.min.js"></script>
+<script src="../lib/markov.js"></script>
+<script>
+var txt;
+var markov = new MarkovGeneratorWord(3,120)
+$.get("butler.txt", function(text) {
+     markov.feed(text);
+});
+$.get("butler2.txt", function(text) {
+     markov.feed(text);
+});
+function generate(){
+	var t = markov.generate()
+	$('body').text(t);
+}
+</script>
+<h1>Welcome to Incomprehensible Discourse Generator 3000</h1>
+<button onclick="generate()">WWJD: What Would Judith Do?</button>
