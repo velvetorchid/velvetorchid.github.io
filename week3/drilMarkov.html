@@ -1,0 +1,19 @@
+<script src="../lib/jquery-1.11.1.min.js"></script>
+<script src="../lib/markov.js"></script>
+<script>
+var txt;
+var markov = new MarkovGenerator(5,180);
+
+$.get("dril.txt", function(text) {
+     markov.feed(text); 
+});
+$.get("appendedbutler.txt", function(text) {
+     markov.feed(text);
+});
+function generate(){
+	var t = markov.generate()
+	$('h1').text(t);
+}
+</script>
+<h1>Area Gay Icon Has THE MOST to Say</h1>
+<button onclick="generate()">See her secrets here!</button>
